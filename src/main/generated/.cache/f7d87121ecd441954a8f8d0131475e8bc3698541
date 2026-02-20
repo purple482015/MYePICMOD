@@ -1,0 +1,7 @@
+// 1.21.11	-999999999-01-01T00:00:00	End Update/End Update Recipes
+a60edb99b2fbe2e3d44ea2dc489aa4376b7b9c58 data/end-update/advancement/recipes/misc/enderite_block.json
+2c503034f44a0fae3c350eb0fea1fa3a0e3a8bc0 data/end-update/advancement/recipes/misc/enderite_ingot.json
+1187632b8564b79056ae54d8c9fd23322c419767 data/end-update/advancement/recipes/misc/enderite_ingot_from_smelting_raw_enderite.json
+75d3520fb6ec499fa2cb21c07ce89e7995d758cc data/end-update/recipe/enderite_block.json
+320b2ad2ecb72fecbb85f4ba5c638cc2abc7ae60 data/end-update/recipe/enderite_ingot.json
+f187b2e92ac8f5692c0997ff88733f1b80fc84ea data/end-update/recipe/enderite_ingot_from_smelting_raw_enderite.json

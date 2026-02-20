@@ -1,0 +1,57 @@
+package end_update.Block;
+
+
+import end_update.EndUpdate;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+
+import java.util.function.Function;
+
+public class ModBlocks {
+    public static void registerBlocks() {
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.BUILDING_BLOCKS).register((itemGroup) -> {
+            itemGroup.accept(ModBlocks.ENDERITE_BLOCK.asItem());
+            itemGroup.accept(ModBlocks.ENDERITE_ORE.asItem());
+        });
+    }
+    public static final Block ENDERITE_BLOCK = register("enderite_block", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).requiresCorrectToolForDrops() .strength(50.0f, 1200.0f), true);
+    public static final Block ENDERITE_ORE = register("enderite_ore", Block::new, BlockBehaviour.Properties.of().sound(SoundType.STONE).requiresCorrectToolForDrops() .strength(20, 600.0f), true);
+    private static Block register(String name, Function<BlockBehaviour.Properties, Block> blockFactory, BlockBehaviour.Properties settings, boolean shouldRegisterItem) {
+        ResourceKey<Block> blockKey = keyOfBlock(name);
+
+        Block block = blockFactory.apply(settings.setId(blockKey));
+
+        if (shouldRegisterItem) {
+
+            ResourceKey<Item> itemKey = keyOfItem(name);
+
+            BlockItem blockItem = new BlockItem(block, new Item.Properties().setId(itemKey).useBlockDescriptionPrefix());
+            Registry.register(BuiltInRegistries.ITEM, itemKey, blockItem);
+
+
+        }
+
+        return Registry.register(BuiltInRegistries.BLOCK, blockKey, block);
+    }
+
+    private static ResourceKey<Block> keyOfBlock(String name) {
+        return ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(EndUpdate.MOD_ID, name));
+    }
+
+    private static ResourceKey<Item> keyOfItem(String name) {
+        return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(EndUpdate.MOD_ID, name));
+    }
+
+}
+
