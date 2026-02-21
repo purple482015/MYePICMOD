@@ -3,6 +3,7 @@ package end_update;
 import end_update.Block.ModBlocks;
 import end_update.Item.ModItems;
 import end_update.world.gen.ModWorldGeneration;
+import entities.ModEntities;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -24,6 +25,7 @@ public class EndUpdate implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerBlocks();
 		ModWorldGeneration.GenerateModWorldGen();
+		ModEntities.RegisterEntities();
 	    LOGGER.info("Hello Fabric world!");
 	}
 }
