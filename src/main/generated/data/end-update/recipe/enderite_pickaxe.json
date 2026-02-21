@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "e": "end-update:enderite_ingot",
+    "n": "minecraft:netherite_pickaxe"
+  },
+  "pattern": [
+    " e ",
+    "ene",
+    " e "
+  ],
+  "result": {
+    "count": 1,
+    "id": "end-update:enderite_pickaxe"
+  }
+}

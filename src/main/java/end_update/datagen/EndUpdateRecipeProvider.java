@@ -48,6 +48,38 @@ public class EndUpdateRecipeProvider extends FabricRecipeProvider {
                         300, // Cooking time
                         "Raw_Ore_To_Ingot" // group
                 );
+                shaped(RecipeCategory.COMBAT, ModItems.ENDERITE_SWORD)
+                        .pattern(" e ")
+                        .pattern("ene")
+                        .pattern(" e ")
+                        .define('e', ModItems.ENDERITE_INGOT)
+                        .define('n', Items.NETHERITE_SWORD)
+                        .unlockedBy(getHasName(ModItems.ENDERITE_INGOT), has(ModItems.ENDERITE_INGOT))
+                        .save(output);
+                shaped(RecipeCategory.COMBAT, ModItems.ENDERITE_AXE)
+                        .pattern(" e ")
+                        .pattern("ene")
+                        .pattern(" e ")
+                        .define('e', ModItems.ENDERITE_INGOT)
+                        .define('n', Items.NETHERITE_AXE)
+                        .unlockedBy(getHasName(ModItems.ENDERITE_INGOT), has(ModItems.ENDERITE_INGOT))
+                        .save(output);
+                shaped(RecipeCategory.TOOLS, ModItems.ENDERITE_PICKAXE)
+                        .pattern(" e ")
+                        .pattern("ene")
+                        .pattern(" e ")
+                        .define('e', ModItems.ENDERITE_INGOT)
+                        .define('n', Items.NETHERITE_PICKAXE)
+                        .unlockedBy(getHasName(ModItems.ENDERITE_INGOT), has(ModItems.ENDERITE_INGOT))
+                        .save(output);
+                shaped(RecipeCategory.COMBAT, ModItems.ENDERITE_SHOVEL)
+                        .pattern(" e ")
+                        .pattern("ene")
+                        .pattern(" e ")
+                        .define('e', ModItems.ENDERITE_INGOT)
+                        .define('n', Items.NETHERITE_SHOVEL)
+                        .unlockedBy(getHasName(ModItems.ENDERITE_INGOT), has(ModItems.ENDERITE_INGOT))
+                        .save(output);
 
             }
         };

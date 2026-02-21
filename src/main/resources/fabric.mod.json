@@ -3,13 +3,13 @@
 	"id": "end-update",
 	"version": "${version}",
 	"name": "End Update",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "This mod adds an endupdate it includes enderite tools and armor and soon ill add stuctures and biomes and entities",
 	"authors": [
-		"Me!"
+		"Momo"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/purple482015/MYePICMOD/",
+		"sources": "https://github.com/purple482015/MYePICMOD/"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/end-update/icon.png",

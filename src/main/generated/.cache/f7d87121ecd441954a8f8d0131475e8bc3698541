@@ -1,7 +1,15 @@
 // 1.21.11	-999999999-01-01T00:00:00	End Update/End Update Recipes
+0db7f41935273b6b140d1e85a244de0ee01a4c1b data/end-update/advancement/recipes/combat/enderite_axe.json
+ea5124f430a37b2eddb856a4e19c5885ba94a07a data/end-update/advancement/recipes/combat/enderite_shovel.json
+e13ce446412252c0d9a32895f132eaf9f80f8ff8 data/end-update/advancement/recipes/combat/enderite_sword.json
 a60edb99b2fbe2e3d44ea2dc489aa4376b7b9c58 data/end-update/advancement/recipes/misc/enderite_block.json
 2c503034f44a0fae3c350eb0fea1fa3a0e3a8bc0 data/end-update/advancement/recipes/misc/enderite_ingot.json
 1187632b8564b79056ae54d8c9fd23322c419767 data/end-update/advancement/recipes/misc/enderite_ingot_from_smelting_raw_enderite.json
+b99a0ba1fa4b5e4270d974f25883ede5c8fa8c6d data/end-update/advancement/recipes/tools/enderite_pickaxe.json
+30b0914cb794b31ca1be5e4df9d77cbb7b65d40c data/end-update/recipe/enderite_axe.json
 75d3520fb6ec499fa2cb21c07ce89e7995d758cc data/end-update/recipe/enderite_block.json
 320b2ad2ecb72fecbb85f4ba5c638cc2abc7ae60 data/end-update/recipe/enderite_ingot.json
 f187b2e92ac8f5692c0997ff88733f1b80fc84ea data/end-update/recipe/enderite_ingot_from_smelting_raw_enderite.json
+985bc7ba3be5f7004836cc140259210c0ff29b18 data/end-update/recipe/enderite_pickaxe.json
+43ca4b85be03a4a71a295bfe21c454426fa3ddb4 data/end-update/recipe/enderite_shovel.json
+b35ec3d79ef6cd6f580918292183861155119318 data/end-update/recipe/enderite_sword.json
