@@ -1,5 +1,6 @@
 package end_update.world;
 
+import end_update.Block.ModBlocks;
 import end_update.EndUpdate;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -22,9 +23,9 @@ public class ModConfiguredFeatures {
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest end_stoneReplaceables = new BlockMatchTest(Blocks.END_STONE);
         List<OreConfiguration.TargetBlockState> endTargets = List.of(
-                OreConfiguration.target(end_stoneReplaceables, Blocks.COAL_ORE.defaultBlockState())
+                OreConfiguration.target(end_stoneReplaceables, ModBlocks.ENDERITE_ORE.defaultBlockState())
         );
-        register(context, ENDERITE_ORE_KEY, Feature.ORE, new OreConfiguration(endTargets, 9));
+        register(context, ENDERITE_ORE_KEY, Feature.ORE, new OreConfiguration(endTargets, 2));
     }
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

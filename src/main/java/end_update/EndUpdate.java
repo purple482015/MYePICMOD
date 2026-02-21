@@ -23,7 +23,7 @@ public class EndUpdate implements ModInitializer {
 		// Proceed with mild caution
 		ModItems.registerModItems();
 		ModBlocks.registerBlocks();
-
+		ModWorldGeneration.GenerateModWorldGen();
 	    LOGGER.info("Hello Fabric world!");
 	}
 }

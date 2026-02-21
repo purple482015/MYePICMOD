@@ -14,7 +14,7 @@ public class ModWorldGeneration {
     public static void GenerateModWorldGen() {
         BiomeModifications.addFeature(
                 // Using the TagKey approach with the updated Identifier/ResourceLocation syntax
-                BiomeSelectors.tag(TagKey.create(Registries.BIOME, Identifier.fromNamespaceAndPath("minecraft", "is_end"))),
+                BiomeSelectors.foundInTheEnd(),
                 GenerationStep.Decoration.UNDERGROUND_ORES,
                 ModPlacedFeatures.ENDERITE_ORE_PLACED_KEY
         );

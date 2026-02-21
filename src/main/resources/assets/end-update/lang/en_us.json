@@ -2,5 +2,13 @@
   "item.end-update.enderite_ingot": "Enderite Ingot",
   "item.end-update.raw_enderite": "Raw Enderite",
   "block.end-update.enderite_block": "Block Of Enderite",
-  "block.end-update.enderite_ore": "Enderite Ore"
+  "block.end-update.enderite_ore": "Enderite Ore",
+  "item.end-update.enderite_pickaxe": "Enderite Pickaxe",
+  "item.end-update.enderite_sword": "Enderite Sword",
+  "item.end-update.enderite_axe": "Enderite Axe",
+  "item.end-update.enderite_shovel": "Enderite Shovel",
+  "item.end-update.enderite_helmet": "Enderite Helmet",
+  "item.end-update.enderite_chestplate": "Enderite Chestplate",
+  "item.end-update.enderite_leggings": "Enderite Leggings",
+  "item.end-update.enderite_boots": "Enderite Boots"
 }

@@ -1,5 +1,5 @@
 package end_update.world;
-
+import net.minecraft.world.level.levelgen.placement.BlockPredicateFilter;
 import end_update.EndUpdate;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.Registries;
@@ -25,11 +25,11 @@ public class ModPlacedFeatures {
 
 
         register(context, ENDERITE_ORE_PLACED_KEY, endOre, List.of(
-                RarityFilter.onAverageOnceEvery(14),
-                CountPlacement.of(10),
+                RarityFilter.onAverageOnceEvery(3 ),
                 InSquarePlacement.spread(),
                 HeightRangePlacement.uniform(VerticalAnchor.absolute(40), VerticalAnchor.absolute(70)), // Height range
                 BiomeFilter.biome() // Only spawns in valid biomes
+
         ));
     }
 
