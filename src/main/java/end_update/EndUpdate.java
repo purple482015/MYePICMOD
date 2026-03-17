@@ -3,11 +3,17 @@ package end_update;
 import end_update.Block.ModBlocks;
 import end_update.Item.ModItems;
 import end_update.world.gen.ModWorldGeneration;
+import entities.EntityRegistry;
 import entities.ModEntities;
+import net.fabricmc.api.EnvType;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import renderer.ModRenderer;
 
 public class EndUpdate implements ModInitializer {
 	public static final String MOD_ID = "end-update";
@@ -26,6 +32,14 @@ public class EndUpdate implements ModInitializer {
 		ModBlocks.registerBlocks();
 		ModWorldGeneration.GenerateModWorldGen();
 		ModEntities.RegisterEntities();
-	    LOGGER.info("Hello Fabric world!");
+		FabricDefaultAttributeRegistry.register(EntityRegistry.ENDER_WARP, ModEntities.createAttributes());
+		// Only register renderer if we're on the client
+		if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT) {
+			EntityRendererRegistry.register(EntityRegistry.ENDER_WARP,
+					context -> new ModRenderer<>(context, EntityRegistry.ENDER_WARP));
+		}
+
+
+		LOGGER.info("Hello Fabric world!");
 	}
 }
